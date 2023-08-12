@@ -1,8 +1,6 @@
 /* Code headers */
 #include <stdio.h>
 
-/* Betty documentation */
-
 /**
  *main - receives no argument
  *
@@ -17,5 +15,5 @@ int main(void)
 	    putchar(x);
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
