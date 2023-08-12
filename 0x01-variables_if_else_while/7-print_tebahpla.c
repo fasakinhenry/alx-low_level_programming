@@ -5,7 +5,7 @@
  * Only putchar is allowed
  * all your code should be in the main function
  * You can only use putchar twice in your code
- * return: 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
