@@ -8,14 +8,14 @@
 
 int main(void)
 {
-	char alpha1, alpha2;
+	char al1, al2;
 
 	for (al1 = 'a'; al1 <= 'z'; al1++)
 	{
 		putchar(al1);
 	}
 
-	for (al2 = 'A'; al2 <= 'Z'; 2++)
+	for (al2 = 'A'; al2 <= 'Z'; al2++)
 	{
 		putchar(al2);
 	}
