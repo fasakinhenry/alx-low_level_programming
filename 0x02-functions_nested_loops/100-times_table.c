@@ -1,23 +1,44 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_to_98 - Prints all natural numbers from input to 98,
- * @num: the unknown number
+ * print_times_table - Prints the times table of the input,
+ * @n: The value of the times table to be printed.
  */
 
-void print_to_98(int num)
+void print_times_table(int n)
 {
-	if (num >= 98)
-	{
-		while (num > 98)
-			printf("%d, ", num--);
-		printf("%d\n", num);
-	}
+	int i, j, prod;
 
-	else
+	if (n >= 0 && n <= 15)
 	{
-		while (num < 98)
-			printf("%d, ", num++);
-		printf("%d\n", num);
+		for (i = 0; i <= n; i++)
+		{
+			_putchar('0');
+
+			for (j = 1; j <= n; j++)
+			{
+				_putchar(',');
+				_putchar(' ');
+
+				prod = i * j;
+
+				if (prod <= 99)
+					_putchar(' ');
+				if (prod <= 9)
+					_putchar(' ');
+
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10)) % 10 + '0');
+				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+				_putchar((prod % 10) + '0');
+			}
+			_putchar('\n');
+		}
 	}
-}
+}}
