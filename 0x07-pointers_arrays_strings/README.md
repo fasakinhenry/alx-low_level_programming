@@ -1,2 +1,1 @@
-0x07. C - Even more pointers, arrays and strings
-
+#0x07 Pointers, arrays and strings in C programming language
