@@ -1,46 +1,14 @@
-#include "main.h"
-#include <stdio.h>
+#ifndef MAIN_H_
+#define MAIN_H_
 
-/**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
- */
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-        unsigned int i;
-
-        i = 0;
-        while (i < size)
-        {
-                if (i % 10)
-                {
-                        printf(" ");
-                }
-                if (!(i % 10) && i)
-                {
-                        printf("\n");
-                }
-                printf("0x%02x", buffer[i]);
-                i++;
-        }
-        printf("\n");
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char buffer[98] = {0x00};
-
-    simple_print_buffer(buffer, 98);
-    _memset(buffer, 0x01, 95);
-    printf("-------------------------------------------------\n");
-    simple_print_buffer(buffer, 98);    
-    return (0);
-}
+char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
+int _putchar(char c);
+void print_diagsums(int *a, int size);
+void set_string(char **s, char *to);
+#endif
