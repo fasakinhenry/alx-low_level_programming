@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-  *main - prints -putchar followed by a newline
+  * main - prints -putchar followed by a newline
   *
-  *Description - The main function is the entry poin*
+  * Description - The main function is the entry point
   *
-  *Return: Always returns 0(success)
+  * Return: Always returns 0(success)
  */
 
 
