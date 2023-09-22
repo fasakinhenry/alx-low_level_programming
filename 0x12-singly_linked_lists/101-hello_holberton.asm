@@ -9,7 +9,7 @@ section .text
 main:
     push rdi                  ; Preserve the value of rdi register
     lea rdi, [hello_msg]      ; Load the address of the hello_msg string into rdi
-    lea rsi, [format]         ; Load the address of the format string into rsi
+    lea rdi, [format]         ; Load the address of the format string into rsi
     call printf              ; Call the printf function
     pop rdi                   ; Restore the original value of rdi
     ret
