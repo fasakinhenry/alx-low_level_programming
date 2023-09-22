@@ -8,6 +8,6 @@ section .text
 main:
     push rdi                  ; Preserve the value of rdi register
     lea rdi, [hello_msg]      ; Load the address of the hello_msg string into rdi
-    call printf              ; Call the printf function
+    call printf               ; Call the printf function
     pop rdi                   ; Restore the original value of rdi
     ret
