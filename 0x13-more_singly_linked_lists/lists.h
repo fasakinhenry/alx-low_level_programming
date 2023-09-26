@@ -3,9 +3,8 @@
 
 /*
  * File: lists.h
- * Author: Adedoyin Emmanuel Adeniyi
- * Description: Header file containing prototypes and definitions for all functions
- *       and types written in the 0x12-more_singly_linked_lists directory.
+ * Author: Fasakin Henry
+ * Description: Prototypes and definitions for 0x12-more_singly_linked_lists
  */
 
 #include <stdlib.h>
