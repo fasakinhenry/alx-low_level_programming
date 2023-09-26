@@ -1,13 +1,20 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+#include <stdlib.h>
 /*
  * File: lists.h
  * Author: Fasakin Henry
  * Description: Prototypes and definitions for 0x12-more_singly_linked_lists
  */
 
-#include <stdlib.h>
+/**
+ * struct listint_s - singly linked list
+ * @next: points to the next node
+ * @n: Integer for the listint structure
+ * Description: singly linked list node structure
+ *              for ALX project
+ */
 
 typedef struct listint_s
 {
