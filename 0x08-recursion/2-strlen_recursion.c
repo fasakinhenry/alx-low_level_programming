@@ -5,7 +5,7 @@
  * @s: string parameter to be used
  * 
  * Return: Length of the string
- * when there us no string again, returns 0
+ * when there is no string again, returns 0
 */
 
 int _strlen_recursion(char *s)
