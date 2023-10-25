@@ -1,6 +1,14 @@
 #include "main.h"
 
-int check_sqrt(int num, int root);
+/**
+ * check_sqrt - gives the natural square root of a number
+ * @num: Number to be checked
+ * @root: Iterator of number to see which iteration
+ * matches the root of the @num above
+ *
+ * Return: natural root is number has natural root
+ * else, -1 is returned
+*/
 
 int check_sqrt(int num, int root)
 {
