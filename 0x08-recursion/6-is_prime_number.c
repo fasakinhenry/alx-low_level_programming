@@ -1,5 +1,14 @@
 #include "main.h"
 
+/**
+ * check_prime - checks if a number is a prime number
+ * @num: number to be checked
+ * @i: Iterator
+ *
+ * Return: if number is a prime number - 1
+ * if number is not a prime number - 0
+*/
+
 int check_prime(int num, int i)
 {
 	if (i <= 1)
