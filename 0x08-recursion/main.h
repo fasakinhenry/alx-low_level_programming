@@ -13,5 +13,19 @@ void _print_rev_recursion(char *s);
 /*Function prototype for str lenght recursion */
 int _strlen_recursion(char *s);
 
-/* */
+/* Function prototype for factorial function */
+int factorial(int n);
+
+/*Function prototype for power recursion */
+int _pow_recursion(int x, int y);
+
+/* Function prototype for sqrt using recursion */
+int _sqrt_recursion(int n);
+
+/*Function prototype for int_is_prime_number */
+int is_prime_number(int n);
+
+/* Function prototype fpr is_palindrome */
+int is_palindrome(char *s);
+
 #endif

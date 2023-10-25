@@ -1,10 +1,29 @@
 #include "main.h"
 
-int _strlen_recursion(char *s){
+/**
+ * _strlen_recursion - returns length of string using recursion,
+ * @s: string parameter to be used
+ *
+ * Return: Length of the string
+ * when there is no string again, returns 0
+*/
+
+int _strlen_recursion(char *s)
+{
 	if (*s == '\0')
 		return (0);
 	return (_strlen_recursion(s + 1) + 1);
 }
+
+/**
+ * check_palindrome - returns length of string using recursion,
+ * @a: string parameter to be used
+ * @i: iterator for normal string
+ * @j: iterator for the string written backwards
+ *
+ * Return: Length of the string
+ * when there is no string again, returns 0
+*/
 
 int check_palindrome(char *a, int i, int j)
 {

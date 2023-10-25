@@ -22,7 +22,7 @@ int check_prime(int num, int i)
  * is_prime_number - returns 1 if the input integer is a prime number,
  * unless returns 0
  * @n: Number to be checked
- * 
+ *
  * Return: 1 if number is prime number
  * else returns 0
 */
