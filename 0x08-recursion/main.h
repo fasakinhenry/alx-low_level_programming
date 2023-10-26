@@ -29,6 +29,6 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 
 /* Function prototype for the wildcmp function*/
-int wildcmp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2);
 
 #endif
