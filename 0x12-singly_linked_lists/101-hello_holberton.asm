@@ -1,14 +1,12 @@
 section .data
     hello_msg db "Hello, Holberton", 0
+    format db "%s", 0
 
 section .text
+    extern printf
     global main
 
-extern printf
-
 main:
-    push rdi                  ; Preserve the value of rdi register
-    lea rdi, [hello_msg]      ; Load the address of the hello_msg string into rdi
-    call printf              ; Call the printf function
-    pop rdi                   ; Restore the original value of rdi
-    ret
+    push rdi        ; Preserve registers before calling printf
+    mov rdi, format ; Format string
+    mov
