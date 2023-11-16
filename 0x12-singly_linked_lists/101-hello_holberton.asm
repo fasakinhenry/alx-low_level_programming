@@ -1,19 +1,21 @@
-section .data
-    hello_msg db "Hello, Holberton", 0
-    format db "%s", 0
+extern printf
 
 section .text
-    extern printf
-    global main
+   global main
 
 main:
-    push rdi        ; Preserve registers before calling printf
-    mov rdi, format ; Format string
-    mov rsi, hello_msg ; Message string
-    call printf     ; Call printf
-    pop rdi         ; Restore registers
+   push rbp
 
-    ; Exit the program
-    mov eax, 0      ; System call number for exit
-    xor edi, edi    ; Exit code 0
-    syscall
+   mov rdi,fmt
+   mov rsi,msg
+   mov rax,0
+   call printf
+
+   pop rbp
+
+   mov rax,0
+   ret
+
+section .data
+   msg: db "Hello, Holberton", 0
+   fmt: db "%s", 10, 0
